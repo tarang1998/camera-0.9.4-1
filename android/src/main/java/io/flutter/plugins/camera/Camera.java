@@ -347,8 +347,12 @@ class Camera
             int templateType, Runnable onSuccessCallback, Surface... surfaces)
             throws CameraAccessException {
 
-        // Close any existing capture session.
-        closeCaptureSession();
+        try {
+            // Close any existing capture session.
+            closeCaptureSession();
+        } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
+            Log.w("Camera session could not be closed properly => error: " + e.toString());
+        }
 
 
         // Create a new capture builder.
