@@ -346,14 +346,8 @@ class Camera
     private void createCaptureSession(
             int templateType, Runnable onSuccessCallback, Surface... surfaces)
             throws CameraAccessException {
-
-        try {
-            // Close any existing capture session.
-            closeCaptureSession();
-        } catch (CameraAccessException | NullPointerException | IllegalStateException e) {
-            Log.w("Camera session could not be closed properly");
-        }
-
+        // Close any existing capture session.
+        closeCaptureSession();
 
         // Create a new capture builder.
         previewRequestBuilder = cameraDevice.createCaptureRequest(templateType);
