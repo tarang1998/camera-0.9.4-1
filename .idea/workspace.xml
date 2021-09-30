@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d2af33f-bf47-482e-8f49-8133f3cd022f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/camera-0.9.4+1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/lint-baseline.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/CameraCaptureCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/CameraPermissions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/CameraPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/CameraProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/CameraRegionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/CameraState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/CameraUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/CameraZoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/DartMessenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/ImageSaver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/MethodCallHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/CameraFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/CameraFeatureFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/CameraFeatureFactoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/CameraFeatures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/autofocus/AutoFocusFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/autofocus/FocusMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/exposurelock/ExposureLockFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/exposurelock/ExposureMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/exposureoffset/ExposureOffsetFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/exposurepoint/ExposurePointFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/flash/FlashFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/flash/FlashMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/focuspoint/FocusPointFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/fpsrange/FpsRangeFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/noisereduction/NoiseReductionFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/noisereduction/NoiseReductionMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/resolution/ResolutionFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/resolution/ResolutionPreset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/sensororientation/DeviceOrientationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/sensororientation/SensorOrientationFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/zoomlevel/ZoomLevelFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/features/zoomlevel/ZoomUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/media/MediaRecorderBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/types/CameraCaptureProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/types/CaptureTimeoutsWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/types/ExposureMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/types/FlashMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/types/FocusMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/types/ResolutionPreset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/java/io/flutter/plugins/camera/types/Timeout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/CameraCaptureCallbackStatesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/CameraCaptureCallbackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/CameraPermissionsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/CameraPropertiesImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/CameraRegionUtils_convertPointToMeteringRectangleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/CameraRegionUtils_getCameraBoundariesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/CameraTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/CameraUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/CameraZoomTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/DartMessengerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/ImageSaverTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/MethodCallHandlerImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/autofocus/AutoFocusFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/autofocus/FocusModeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/exposurelock/ExposureLockFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/exposurelock/ExposureModeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/exposureoffset/ExposureOffsetFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/exposurepoint/ExposurePointFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/flash/FlashFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/focuspoint/FocusPointFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/fpsrange/FpsRangeFeaturePixel4aTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/fpsrange/FpsRangeFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/noisereduction/NoiseReductionFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/resolution/ResolutionFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/sensororientation/DeviceOrientationManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/sensororientation/SensorOrientationFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/zoomlevel/ZoomLevelFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/features/zoomlevel/ZoomUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/media/MediaRecorderBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/types/ExposureModeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/types/FlashModeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/types/FocusModeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/test/java/io/flutter/plugins/camera/utils/TestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera_android.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/androidTestDebug/java/io/flutter/plugins/DartIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/androidTestDebug/java/io/flutter/plugins/cameraexample/FlutterActivityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/camera_example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/camera_example_android.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/integration_test/camera_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Podfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/main.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/RunnerTests/CameraExposureTests.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/RunnerTests/CameraFocusTests.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/RunnerTests/CameraOrientationTests.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/RunnerTests/CameraPreviewPauseTests.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/RunnerTests/CameraUtilTests.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/RunnerTests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/test_driver/integration_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/web/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/web/icons/Icon-192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/web/icons/Icon-512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/web/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Classes/CameraPlugin.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Classes/CameraPlugin.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/camera.podspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/camera.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/camera_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/camera_image.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/camera_preview.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/camera_image_stream_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/camera_image_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/camera_preview_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/camera_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/camera_value_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/utils/method_channel_mock.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1yqkfurntUPWAd9Jj8thBSr5vaR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d2af33f-bf47-482e-8f49-8133f3cd022f" name="Default Changelist" comment="" />
+      <created>1632986613048</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632986613048</updated>
+    </task>
+    <servers />
+  </component>
+</project>
