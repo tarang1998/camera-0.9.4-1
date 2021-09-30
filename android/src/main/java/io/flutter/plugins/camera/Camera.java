@@ -695,27 +695,43 @@ class Camera
         final File outputDir = applicationContext.getCacheDir();
         try {
             captureFile = File.createTempFile("REC", ".mp4", outputDir);
+            Log.d(TAG, "Start Video recording : Created Temporary file");
         } catch (IOException | SecurityException e) {
             result.error("cannotCreateFile", e.getMessage(), null);
             return;
         }
         try {
+            Log.d(TAG, "Start Video Recording : Prepare Media Recorder");
+
             prepareMediaRecorder(captureFile.getAbsolutePath());
+
+            Log.d(TAG, "Start Video Recording : Prepare Media Recorder Successfull");
+
         } catch (IOException e) {
             recordingVideo = false;
             captureFile = null;
             result.error("videoRecordingFailed", e.getMessage(), null);
             return;
         }
+
+        Log.d(TAG, "Start Video Recording : Set Auto Focus");
+
         // Re-create autofocus feature so it's using video focus mode now.
         cameraFeatures.setAutoFocus(
                 cameraFeatureFactory.createAutoFocusFeature(cameraProperties, true));
+
+        Log.d(TAG, "Start Video Recording : Set Auto Focus Successfull");
+
         recordingVideo = true;
         try {
-            Log.i("videoRecording: Starting createCaptureSession");
+
+            Log.d(TAG, "Start Video Recording : Create Capture Session");
+
             createCaptureSession(
                     CameraDevice.TEMPLATE_RECORD, () -> mediaRecorder.start(), mediaRecorder.getSurface());
-            Log.i("videoRecording: Completed createCaptureSession");
+
+            Log.d(TAG, "Start Video Recording : Create Capture Session Successfull");
+
             result.success(null);
         } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
             recordingVideo = false;
@@ -729,19 +745,44 @@ class Camera
             result.success(null);
             return;
         }
+
+        Log.d(TAG, "Stop Video Recording : Set Auto Focus");
+
         // Re-create autofocus feature so it's using continuous capture focus mode now.
         cameraFeatures.setAutoFocus(
                 cameraFeatureFactory.createAutoFocusFeature(cameraProperties, false));
+
+        Log.d(TAG, "Start Video Recording : Set Auto Focus Successfull");
+
         recordingVideo = false;
         try {
+            Log.d(TAG, "Stop Video Recording : Abort Captures");
+
             captureSession.abortCaptures();
+
+            Log.d(TAG, "Stop Video Recording : Abort Captures Successfull");
+
+            Log.d(TAG, "Stop Video Recording : Media Recorder.stop");
+
             mediaRecorder.stop();
+
+            Log.d(TAG, "Stop Video Recording : Media Recorder . stop successfull");
+
         } catch (CameraAccessException | IllegalStateException | NullPointerException e) {
             // Ignore exceptions and try to continue (changes are camera session already aborted capture).
         }
         mediaRecorder.reset();
+
+        Log.d(TAG, "Stop Video Recording : Media Recorder Reset successfull");
+
         try {
+
+            Log.d(TAG, "Stop Video Recording : Start Preview");
+
             startPreview();
+
+            Log.d(TAG, "Stop Video Recording : Start Preview Successfull");
+
         } catch (CameraAccessException | IllegalStateException | NullPointerException e) {
             result.error("videoRecordingFailed", e.getMessage(), null);
             return;
