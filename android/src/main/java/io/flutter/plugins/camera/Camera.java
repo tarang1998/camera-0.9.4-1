@@ -283,7 +283,7 @@ class Camera
                                     cameraFeatures.getAutoFocus().getValue(),
                                     cameraFeatures.getExposurePoint().checkIsSupported(),
                                     cameraFeatures.getFocusPoint().checkIsSupported());
-                        } catch (CameraAccessException e) {
+                        } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
                             dartMessenger.sendCameraErrorEvent(e.getMessage());
                             close();
                         }
@@ -461,7 +461,7 @@ class Camera
                 onSuccessCallback.run();
             }
 
-        } catch (CameraAccessException e) {
+        } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
             onErrorCallback.onError("cameraAccess", e.getMessage());
         }
     }
@@ -527,7 +527,7 @@ class Camera
             captureSession.capture(
                     previewRequestBuilder.build(), cameraCaptureCallback, backgroundHandler);
 
-        } catch (CameraAccessException e) {
+        } catch (CameraAccessException | NullPointerException | IllegalStateException e) {
             e.printStackTrace();
         }
     }
@@ -547,7 +547,7 @@ class Camera
         CaptureRequest.Builder stillBuilder;
         try {
             stillBuilder = cameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_STILL_CAPTURE);
-        } catch (CameraAccessException e) {
+        } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
             dartMessenger.error(flutterResult, "cameraAccess", e.getMessage(), null);
             return;
         }
@@ -587,7 +587,7 @@ class Camera
             captureSession.abortCaptures();
             Log.i(TAG, "sending capture request");
             captureSession.capture(stillBuilder.build(), captureCallback, backgroundHandler);
-        } catch (CameraAccessException e) {
+        } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
             dartMessenger.error(flutterResult, "cameraAccess", e.getMessage(), null);
         }
     }
@@ -653,7 +653,7 @@ class Camera
 
         try {
             captureSession.capture(previewRequestBuilder.build(), null, backgroundHandler);
-        } catch (CameraAccessException e) {
+        } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
             dartMessenger.sendCameraErrorEvent(e.getMessage());
         }
     }
@@ -678,7 +678,7 @@ class Camera
                     CaptureRequest.CONTROL_AF_TRIGGER, CameraMetadata.CONTROL_AF_TRIGGER_IDLE);
 
             captureSession.capture(previewRequestBuilder.build(), null, backgroundHandler);
-        } catch (CameraAccessException e) {
+        } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
             dartMessenger.sendCameraErrorEvent(e.getMessage());
             return;
         }
@@ -713,7 +713,7 @@ class Camera
             createCaptureSession(
                     CameraDevice.TEMPLATE_RECORD, () -> mediaRecorder.start(), mediaRecorder.getSurface());
             result.success(null);
-        } catch (CameraAccessException e) {
+        } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
             recordingVideo = false;
             captureFile = null;
             result.error("videoRecordingFailed", e.getMessage(), null);
@@ -732,13 +732,13 @@ class Camera
         try {
             captureSession.abortCaptures();
             mediaRecorder.stop();
-        } catch (CameraAccessException | IllegalStateException e) {
+        } catch (CameraAccessException | IllegalStateException | NullPointerException e) {
             // Ignore exceptions and try to continue (changes are camera session already aborted capture).
         }
         mediaRecorder.reset();
         try {
             startPreview();
-        } catch (CameraAccessException | IllegalStateException e) {
+        } catch (CameraAccessException | IllegalStateException | NullPointerException e) {
             result.error("videoRecordingFailed", e.getMessage(), null);
             return;
         }
@@ -893,7 +893,7 @@ class Camera
                     try {
                         captureSession.setRepeatingRequest(
                                 previewRequestBuilder.build(), null, backgroundHandler);
-                    } catch (CameraAccessException e) {
+                    } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
                         if (result != null) {
                             result.error(
                                     "setFocusModeFailed", "Error setting focus mode: " + e.getMessage(), null);
