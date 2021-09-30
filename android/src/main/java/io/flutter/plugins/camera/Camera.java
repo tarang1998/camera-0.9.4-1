@@ -349,7 +349,7 @@ class Camera
         try {
             // Close any existing capture session.
             closeCaptureSession();
-        } catch (e) {
+        } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
             Log.w("Camera session could not be closed properly => error: " + e.toString());
         }
 
