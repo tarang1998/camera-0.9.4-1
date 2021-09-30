@@ -228,6 +228,8 @@ class Camera
                                         ? getDeviceOrientationManager().getVideoOrientation()
                                         : getDeviceOrientationManager().getVideoOrientation(lockedOrientation))
                         .build();
+
+        Log.i(TAG, "media recorder prepared properly");
     }
 
     @SuppressLint("MissingPermission")
@@ -710,8 +712,10 @@ class Camera
                 cameraFeatureFactory.createAutoFocusFeature(cameraProperties, true));
         recordingVideo = true;
         try {
+            Log.i("videoRecording: Starting createCaptureSession");
             createCaptureSession(
                     CameraDevice.TEMPLATE_RECORD, () -> mediaRecorder.start(), mediaRecorder.getSurface());
+            Log.i("videoRecording: Completed createCaptureSession");
             result.success(null);
         } catch (CameraAccessException  | NullPointerException | IllegalStateException e) {
             recordingVideo = false;
